@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed quiz!!</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <div>
+        <h1 id="h1tq">Timed quiz!!</h1>
+        <div id="questioncontainer">
+            <h2 id="question"></h2>
+            <ul id="options"></ul>
+        </div>
+        <div id="feedback"></div>
+        <div id="timer"></div>
+        <button id="startBtn">StartTimedTest</button>
+    </div>
+
+    <div id="initialsContainer" style="display: none;">
+        <label for="initials">Initial Here! Winner!</label>
+        <input type="text" id="initials">
+        <button id="submitInitials">Submit</button>
+    </div>
+
+    <!--
+        -when clicking the start button a timer starts and presented with a question
+        -when done awnsering a question your presented with another question
+        -when i awnser a question incorrectly time is subtracted from the clock
+        -when all questions are awnsered or timer reaches zero game is over
+        - when game is over you can save your initials and scores.
+    -->
+    <script src="javascript.js"></script>
+</body>
+</html>
